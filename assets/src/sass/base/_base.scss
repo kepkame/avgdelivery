@@ -1,0 +1,184 @@
+// Other global styles (h1, ul, visually-hidden, etc.)
+html, body {
+    margin: 0;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, div {
+    font-family: $ff-base;
+    color: $color-text;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 58px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+p, a, li, div {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+a {
+    text-decoration: underline;
+    color: $color-primary;
+
+    &:focus,
+    &:hover {
+        color: $color-primary-hover;
+    }
+}
+
+a:visited {
+    color: $color-primary;
+}
+
+ul, ol {
+    margin-left: 0;
+}
+
+.col-full {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.entry-content {
+    overflow: hidden;
+}
+
+.page-wrapper {
+    position: relative;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.site-main {
+    margin-bottom: 95px;
+}
+
+.site-main--center {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+}
+    
+.site-main.site-main--with-form {
+    margin-bottom: 0;
+}
+
+.site-content {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.site-content:focus {
+    outline: none;
+}
+
+.rings {
+    position: absolute;
+    z-index: -1;
+}
+
+.rings--left {
+    bottom: -148px;
+    left: -405px;
+    width: 698px;
+    height: 544px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    bottom: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 950px) {
+    h1 {
+        font-size: 52px;
+        line-height: 58px;
+    }
+
+    h2 {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    h3 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .rings--left {
+        left: -156px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .site-main {
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (min-width: 1340px) {
+    .container {
+        max-width: 1340px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}

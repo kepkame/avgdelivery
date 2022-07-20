@@ -1,0 +1,55 @@
+// Page - Where buy
+
+.where-buy {
+   padding-bottom: 15px;
+}
+
+.where-buy__item--map {
+    margin-bottom: 75px;
+}
+
+.where-buy__map {
+    height: 425px;
+    background-color: $color-background-light;
+    background-image: url("../img/yandex-map-where-buy.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 850px) {
+    .where-buy {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .where-buy__item--map {
+        flex-basis: 48.4909%;
+        max-width: 48.4909%;
+        order: 1;
+    }
+    
+    .where-buy__map {
+        height: 625px;
+    }
+
+    .where-buy__item--accordion {
+        flex-basis: 48.4909%;
+        max-width: 48.4909%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .where-buy__item--map {
+        flex-basis: 48.8281%;
+        max-width: 48.8281%;
+    }
+
+    .where-buy__item--accordion {
+        flex-basis: 48.8281%;
+        max-width: 48.8281%;
+    }
+}

@@ -1,0 +1,243 @@
+// Aaccordions
+
+.accordion__list {
+    list-style: none;
+    border-top: 2px solid #e2dddc;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion__item {
+    position: relative;
+    border-bottom: 2px solid #e2dddc;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease-out;
+    z-index: 1;
+}
+
+.accordion__title {
+    position: relative;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0;
+    padding: 23px 0;
+    padding-right: 70px;
+    cursor: pointer;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        right: 20px;
+        width: 34px;
+        height: 34px;
+        background-color: transparent;
+        background-image: url("../img/icon-plus.svg");
+        background-size: 18px 18px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid $color-background-light;
+        border-radius: 50%;
+        opacity: 1;
+        transition: background-color 0.4s ease-out;
+        z-index: -1;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 43px;
+        right: 28px;
+        width: 18px;
+        height: 2px;
+        background-color: $color-text;
+        opacity: 0;
+    }
+}
+
+.accordion__item:focus .accordion__title:after,
+.accordion__title:hover:after {
+    background-color: $color-background-light;
+}
+
+.accordion__item:focus,
+.accordion__title:focus {
+    outline: none;
+}
+
+.accordion__item--active .accordion__title:before {
+    opacity: 1;
+}
+
+.accordion__item--active .accordion__title:after {
+    background-image: none;
+}
+
+.accordion__description {
+    display: none;
+    padding: 0;
+    padding-bottom: 2px;
+
+    p {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+}
+
+.accordion__shop {
+    position: relative;
+
+    h5 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    & + .accordion__shop {
+        margin-top: 23px;
+        margin-bottom: 10px;
+        padding-top: 23px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background-color: #e2dddc;
+        }
+    }
+
+    &:first-of-type {
+        margin-top: 27px;
+    }
+
+    &:last-of-type {
+        margin-bottom: 28px;
+    }
+
+    .accordion__text {
+        margin-bottom: 20px;
+    }
+}
+
+.accordion__description .accordion__text {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.accordion__description .accordion__small-title {
+    display: inline-block;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: inherit;
+    color: $color-text;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+.accordion__inner-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion__inner-item {
+    margin: 0;
+}
+
+.accordion__text--address button,
+.accordion__inner-item button {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    color: $color-text;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+        color: $color-primary;
+        background-color: transparent;
+        outline: none;
+    }
+}
+
+.accordion__inner-list--addresses .accordion__address-phone {
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    color: $color-text;
+    margin-bottom: 7px;
+
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+        color: $color-primary;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.accordion__inner-list--addresses .accordion__list-address-phones {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .accordion__address-phone {
+        margin: 0;
+    }
+
+    li:last-child .accordion__address-phone {
+        margin-bottom: 7px;
+    }
+}
+
+.accordion__link {
+    text-decoration: none;
+    color: $color-text;
+
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+        color: $color-primary;
+        outline: none;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .accordion__title {
+        padding-left: 20px;
+        padding-right: 80px;
+    }
+
+    .accordion__description {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .accordion__shop h5 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .accordion__shop h5 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .accordion__description {
+        padding-top: 4px;
+    }
+}

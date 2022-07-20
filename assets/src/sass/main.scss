@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@import 'abstracts/variables'; // Sass variables
+@import 'abstracts/placeholders'; // Sass placeholders
+
+// The base/ folder contains what we can call a generic project template. There you can find a reset file, some typographical rules, and probably some styles (I'm used to calling them _base.scss) that define some standard styles for commonly used HTML elements.
+@import 'base/normalize'; // Reset/normalize
+@import 'base/typography'; // Typography
+@import 'base/animations'; // Animation
+@import 'base/base'; // Other global styles (h1, ul, visually-hidden, etc.)
+@import 'base/nojs'; // Styles with JS not working
+
+// For small components, there is a folder called components/. While layout/ is the main one (it defines the general framework), the code inside the components/ is more focused on the widgets and contains all the modules like slider, loader and the like. Usually there are a lot of files in components/ many if the application or site consists of many small modules.
+@import 'components/accordions'; // Accordions
+@import 'components/buttons'; // Buttons
+@import 'components/forms'; // Forms
+@import 'components/popups'; // Popups
+@import 'components/yandex_map'; // Specific styles Yandex Map API
+
+// The layout folder contains everything that is involved in building the layout of the site or application. This folder can contain styles for the main parts of the site (header, basement, navigation, sidebar...), grid or even CSS styles for all forms.
+@import 'layout/entry-header'; // Entry header site
+@import 'layout/entry-content'; // Entry content site
+@import 'layout/header'; // Header site
+@import 'layout/navigations'; // Navigations, menu lists
+@import 'layout/footer'; // Footer site
+
+// If you have styles that depend on the page, it is better to put them in the pages/ folder, in a file named like the page. For example, it is not uncommon to have very specific styles for the home page, so there is a need for _home.scss in pages/.
+@import 'pages/where-buy'; // Specific styles simple product page - WooCommerce

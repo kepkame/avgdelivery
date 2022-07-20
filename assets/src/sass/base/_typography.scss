@@ -1,0 +1,53 @@
+// Typography
+
+@font-face {
+	font-family: 'HeliosCond';
+	src: url('../fonts/HeliosCond.eot');
+	src: local('HeliosCond'), local('HeliosCond Regular'), local('HeliosCond-Regular'),
+		url('../fonts/HeliosCond.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HeliosCond.woff2') format('woff2'),
+		url('../fonts/HeliosCond.woff') format('woff'),
+		url('../fonts/HeliosCond.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HeliosCond';
+	src: url('../fonts/HeliosCond-Italic.eot');
+	src: local('HeliosCond Italic'), local('HeliosCond-Italic'),
+		url('../fonts/HeliosCond-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HeliosCond-Italic.woff2') format('woff2'),
+		url('../fonts/HeliosCond-Italic.woff') format('woff'),
+		url('../fonts/HeliosCond-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HeliosCond';
+	src: url('../fonts/HeliosCond-Bold.eot');
+	src: local('HeliosCond Bold'), local('HeliosCond-Bold'),
+		url('../fonts/HeliosCond-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HeliosCond-Bold.woff2') format('woff2'),
+		url('../fonts/HeliosCond-Bold.woff') format('woff'),
+		url('../fonts/HeliosCond-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HeliosCond';
+	src: url('../fonts/HeliosCond-Bold-Italic.eot');
+	src: local('HeliosCond Bold Italic'), local('HeliosCond-Bold-Italic'),
+		url('../fonts/HeliosCond-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HeliosCond-Bold-Italic.woff2') format('woff2'),
+		url('../fonts/HeliosCond-Bold-Italic.woff') format('woff'),
+		url('../fonts/HeliosCond-Bold-Italic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}

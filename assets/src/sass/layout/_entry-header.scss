@@ -1,0 +1,82 @@
+// Entry header site
+
+.entry-header {
+    background-color: $color-background-light;
+    overflow: hidden;
+    margin-bottom: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    p {
+        display: none;
+    }
+}
+
+.entry-header__wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.entry-title {
+    font-size: 32px;
+    line-height: 36px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.entry-header__rings {
+    position: absolute;
+    bottom: -145px;
+    right: -360px;
+    width: 488px;
+    height: 459px;
+    transition: right 0.5s ease-out;
+    z-index: -1;
+}
+
+@media screen and (min-width: 360px) {
+    .entry-title {
+        font-size: 38px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .entry-title {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .entry-header {
+        padding-top: 45px;
+        padding-bottom: 47px;
+    }
+    
+    .entry-title {
+        font-size: 52px;
+        line-height: 58px;
+        overflow-wrap: normal;
+        white-space: normal;
+    }
+
+    .entry-header__rings {
+        right: -140px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .center-heading .entry-header__wrapper {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .entry-header__rings {
+        right: -85px;
+        bottom: -190px;
+    }
+}

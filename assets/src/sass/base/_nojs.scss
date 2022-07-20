@@ -1,0 +1,143 @@
+// Styles when JavaScript is not working in the client browser
+
+.no-js {
+
+    .slider-banner__item + .slider-banner__item {
+        border-top: 10px solid $color-background-light;
+    }
+
+    .history:before {
+        top: auto;
+        bottom: 0;
+        transform: translateY(0);
+    }
+
+    .history:after {
+        top: 0;
+        height: 100%;
+        transform: translateY(0);
+    }
+
+    .objects-section .objects-section__card {
+        padding: 0;
+
+        & + .objects-section__card {
+            margin-top: 50px;
+        }
+    }
+
+    .repair-tips {
+
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .repair-tips__slider {
+            width: 100%;
+        }
+
+        .repair-tips__header,
+        .repair-tips__wrapper,
+        .card-blackout__item {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .no-js {
+
+        .objects-section,
+        .repair-tips {
+
+            .object-card-slider,
+            .repair-tips__slider {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .objects-section__card,
+            .card-blackout__item {
+                flex-basis: 48%;
+                max-width: 48%;
+                
+                & + .objects-section__card,
+                & + .card-blackout__item {
+                    margin-top: 0;
+                }
+
+                &:nth-child(n + 3) {
+                    margin-top: 30px;
+                }
+            }
+
+            .objects-section__card:nth-child(n + 3) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .no-js {
+
+        .objects-section {
+
+            .object-card-slider {
+                display: block;
+            }
+
+            .objects-section__card {
+                flex-basis: 100%;
+                max-width: 100%;
+
+                & + .objects-section__card {
+                    margin-top: 50px;
+                }
+
+                &:nth-child(even) .object-card__item--img {
+                    left: auto;
+                    right: 490px;
+                }
+
+                &:nth-child(even) .object-card__item--text {
+                    margin-left: auto;
+                }
+            }
+
+            .objects-section__arrows-wrapper {
+                display: none;
+            }
+        }
+
+        .repair-tips {
+
+            .repair-tips__slider {
+                justify-content: flex-start;
+            }
+
+            .card-blackout__item {
+                flex-basis: 32%;
+                max-width: 32%;
+                margin-right: 2%;
+                
+                &:nth-child(3) {
+                    margin-top: 0;
+                }
+                    
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .no-js .repair-tips .repair-tips__wrapper {
+        width: 100%;
+    }
+}

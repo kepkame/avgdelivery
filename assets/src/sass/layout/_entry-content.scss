@@ -1,0 +1,21 @@
+// Entry content site
+
+.col-full {
+    position: relative;
+    min-height: 300px;
+}
+
+.col-full__rings {
+    display: none;
+}
+
+@media screen and (min-width: 850px) {
+    .col-full__rings {
+        display: block;
+        position: absolute;
+        bottom: -150px;
+        right: -141px;
+        width: 698px;
+        height: 544px;
+    }
+}

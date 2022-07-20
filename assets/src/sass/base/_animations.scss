@@ -1,0 +1,78 @@
+// Animation
+
+
+@keyframes animation-hidden {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(0.98, 0.98, 0.98);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes fadeInBtnClose {
+    0% {
+        transform: translateY(0) scale3d(0.98, 0.98, 0.98);
+    }
+    100% {
+        transform: translateY(0) scale3d(1, 1, 1);
+    }
+}
+
+@keyframes fadePopupShowTopOut {
+    0% {
+        transform: translateX(-50%) translateY(-150%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes fadePopupHiddenTopOut {
+    0% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(400%);
+        opacity: 0;
+    }
+}
+
+@keyframes smoothAppearance {
+    0%,40% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 50px;
+        opacity: 1;
+    }
+}
+
+@keyframes smoothAppearanceHide {
+    0%,40% {
+        bottom: 50px;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 0;
+    }
+}

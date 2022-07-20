@@ -1,0 +1,111 @@
+// Forms
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	width: 100%;
+	background-color: #ffffff;
+	border: none;
+	border: 1px solid $color-secondary;
+	border-radius: 6px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 13px 15px 11px;
+
+	&:focus {
+		border-color: $color-primary;
+		outline: none;
+	}
+}
+
+textarea {
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 144px;
+	max-height: 300px;
+}
+
+.simple-form label {
+	@extend .visually-hidden;
+}
+
+.simple-form__acceptance {
+	font-size: 15px;
+	line-height: 22px;
+	color: #525252;
+
+	a {
+		font-size: inherit;
+		line-height: inherit;
+		color: inherit;
+
+		&:focus,
+		&:hover {
+			color: $color-primary;
+			outline: none;
+		}
+	}
+}
+
+form {
+	
+	p {
+		margin: 0;
+		margin-bottom: 12px;
+	}
+
+	input[type="submit"] {
+		width: auto;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+.popup-avg .simple-form__row--response-output {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.popup-avg form .simple-form__row--response-output {
+	margin: 0;
+	margin-top: 12px;
+}
+
+form .simple-form__agree,
+form .wpcf7-form-control-wrap.agree {
+	display: none;
+}
+
+@media screen and (min-width: 550px) {
+	.simple-form__row {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+
+	.simple-form__col {
+		flex-basis: 48.64%;
+		max-width: 48.64%;
+	}
+
+	.simple-form__col--full-width {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.simple-form__row--footer {
+		.simple-form__col:first-child {
+			flex: 1 0 auto;
+			max-width: calc(100% - 143px - 50px);
+			margin-right: 50px;
+		}
+
+		.simple-form__col:last-child {
+			flex: 0 0 auto;
+			max-width: 143px;
+		}
+	}
+}
