@@ -370,7 +370,7 @@ if(document.querySelector('#where-buy-accordion') && document.querySelector('#wh
             },
             {
               iconLayout: 'default#image',
-              iconImageHref: '/wp-content/uploads/icons/icon-placeholder.svg',
+              iconImageHref: '/avgdelivery/build/img/icon-placeholder.svg',
               iconImageSize: [34, 41],
               iconImageOffset: [-17,-39],
             });
