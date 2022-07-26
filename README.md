@@ -2,7 +2,7 @@
 
 - Дизайн
 - Верстка адаптивная и кроссбраузерная.
-- [Натяжка на WordPress](https://ligaavtoshkol.ru)
+- [Натяжка на WordPress](https://avgrouppro.ru/gde-kupit/)
 
 Данные магазина записаны в js-объекте _[/assets/src/js/where-buy/list.js](https://github.com/kepkame/avgdelivery/blob/main/assets/src/js/where-buy/list.js)_
 
